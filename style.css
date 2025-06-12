@@ -1,0 +1,16 @@
+h2 {
+    border-bottom: 5px solid green;
+}
+ a:link {
+    color: red;
+ }
+
+ a:visited {
+    color: blue;
+ }
+
+ a:hover {
+    color: orange;
+    text-decoration: none;
+ }
+
