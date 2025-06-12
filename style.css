@@ -1,3 +1,8 @@
+h1 {
+   text-align: center;
+   border-bottom: 5px solid gray;
+}
+
 h2 {
     border-bottom: 5px solid green;
 }
@@ -12,5 +17,9 @@ h2 {
  a:hover {
     color: orange;
     text-decoration: none;
+ }
+
+ body {
+   background-color: antiquewhite;
  }
 
