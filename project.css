@@ -1,0 +1,29 @@
+h1 {
+    background-color: orange;
+    width: 200px;
+}
+
+h2 {
+    color: darkslategray;
+    width: 400px;
+    border: solid red;
+    background-color: greenyellow;
+}
+
+h3 {
+    color: black;
+}
+
+h3 em1 {
+    color: darkred;
+    font-style: italic;
+}
+
+h3 em2 {
+    color: darkorange;
+    font-style: italic;
+}
+
+body {
+    background-color: gainsboro;
+}
