@@ -1,17 +1,25 @@
 
-// 課題3-2 のプログラムはこの関数の中に記述すること
+b=document.querySelector('button#kensaku').addEventListener('click',print);
 function print(data) {
+  let genre=document.querySelector('input[name="genre"]');
+  genre.getAttribute("name");
+  genre.value;
+  let a=Number(genre.value);
+  let kekka=document.querySelector('span#kekka');
+  kekka.textContent=2;
+  if(a===1){
   for(let i=0;i<2;i++){
-    console.log((i+1)+"件目の検索結果");
-    console.log(data.results.shop[i].name);
-    console.log(data.results.shop[i].address);
-    console.log(data.results.shop[i].access);
-    console.log(data.results.shop[i].mobile_access);
-    console.log(data.results.shop[i].catch);
-    console.log(data.results.shop[i].budget.average);
-    console.log(data.results.shop[i].genre.name);
-    console.log(data.results.shop[i].open);
-    console.log(data.results.shop[i].sub_genre.name);
+    result.textContent=(i+1)+"件目の検索結果";
+    result.textContent=data.results.shop[i].access;
+    result.textContent=data.results.shop[i].address;
+    result.textContent=data.results.shop[i].budget_memo;
+    result.textContent=data.results.shop[i].catch;
+    result.textContent=data.results.shop[i].genre.name;
+    result.textContent=data.results.shop[i].name;
+    result.textContent=data.results.shop[i].open;
+    result.textContent=data.results.shop[i].station_name;
+    result.textContent=data.results.shop[i].sub_genre.name;
+  }
   }
   }
 
