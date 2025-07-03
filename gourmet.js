@@ -1,31 +1,57 @@
 
-b=document.querySelector('button#kensaku').addEventListener('click',print);
 function print(data) {
-  let genre=document.querySelector('input[name="genre"]');
-  genre.getAttribute("name");
-  genre.value;
-  let a=Number(genre.value);
-  let kekka=document.querySelector('span#kekka');
-  kekka.textContent=2;
-  if(a===1){
   for(let i=0;i<2;i++){
-    result.textContent=(i+1)+"件目の検索結果";
-    result.textContent=data.results.shop[i].access;
-    result.textContent=data.results.shop[i].address;
-    result.textContent=data.results.shop[i].budget_memo;
-    result.textContent=data.results.shop[i].catch;
-    result.textContent=data.results.shop[i].genre.name;
-    result.textContent=data.results.shop[i].name;
-    result.textContent=data.results.shop[i].open;
-    result.textContent=data.results.shop[i].station_name;
-    result.textContent=data.results.shop[i].sub_genre.name;
-  }
+    console.log((i+1)+"件目の検索結果");
+    console.log(data.results.shop[i].access);
+    console.log(data.results.shop[i].address);
+    console.log(data.results.shop[i].budget.name);
+    console.log(data.results.shop[i].catch);
+    console.log(data.results.shop[i].genre.name);
+    console.log(data.results.shop[i].name);
+    console.log(data.results.shop[i].open);
+    console.log(data.results.shop[i].station_name);
+    console.log(data.results.shop[i].sub_genre.name);
   }
   }
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-
+  let a=document.createElement("div");
+  a.setAttribute('id','result');
+  let l=document.createElement('li');
+  for(let i=0;i<2;i++){
+    l.textContent=(i+1)+"件目の検索結果";
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].access;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].address;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].budget.name;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].catch;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].genre.name;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].name;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].open;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].station_name;
+    a.insertAdjacentElement('beforeend',l);
+    l=document.createElement('li');
+    l.textContent=data.results.shop[i].sub_genre.name;
+    a.insertAdjacentElement('beforeend',l);
+    let p=document.querySelector('p#result');
+    p.insertAdjacentElement('afterend',a);
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
