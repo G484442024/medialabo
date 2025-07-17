@@ -11,3 +11,13 @@ button {
     width: 200;
     color: black;
 }
+
+div {
+  color: darkblue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+p {
+    color: aqua;
+}
