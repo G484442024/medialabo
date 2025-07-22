@@ -23,6 +23,7 @@ function printDom(data) {
 
   let m=document.createElement('ul');
   m.textContent="検索結果："+data.results.shop.length+"件";
+  m.classList.add('result-count');
   let u=document.querySelector('#result');
   u.insertAdjacentElement('beforeend',m);
 
@@ -34,7 +35,8 @@ function printDom(data) {
     l.textContent="";
     a.insertAdjacentElement('beforeend',l);
     l=document.createElement('li');
-    l.textContent=(i+1)+"件目の検索結果";
+    l.textContent="⚫︎"+(i+1)+"件目の検索結果";
+    l.classList.add("result-title");
     a.insertAdjacentElement('beforeend',l);
     l=document.createElement('li');
     l.textContent=data.results.shop[i].access;

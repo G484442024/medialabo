@@ -19,5 +19,18 @@ div {
 }
 
 p {
-    color: aqua;
+    color: black;
+}
+
+.result-title {
+  color: cadetblue;
+  font-weight: bold;
+  width: 150px;
+}
+
+.result-count {
+  color: green;
+  font-weight: bold;  
+  font-size: 16px; 
+  margin-bottom: 10px;
 }
